@@ -1,6 +1,14 @@
-# prime_factors(n) prints the prime factorization of a positive integer >= 2.
-# The code is fast only for integers 5 digits or fewer.
+# Runs as is for python 2.7 interpreter.
 def prime_list(n):
+    """
+    prime_factors(n) prints the prime factorization of a positive integer >= 2.
+    The code is fast only for integers 5 digits or fewer.
+    
+    Example (Ubuntu terminal):
+    $ python2 prime_factors.py
+    Enter integer: 89556
+    [2, 2, 3, 17, 439]
+    """
     if n <= 1:
         pass
     else:
