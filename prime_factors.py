@@ -6,12 +6,11 @@
 # Enter integer: 56225
 # [5, 5, 13, 173]
 n = int(raw_input("Enter integer: "))
-import math 
 count = 1
 primes = [2]
-for i in range(2,n+1):
+for i in xrange(2,n+1):
     val = True
-    for j in range(2,int(math.floor(math.sqrt(i)))+1):
+    for j in xrange(2,int(i**0.5)+1):
         if i % j == 0:
             val = False
             continue
